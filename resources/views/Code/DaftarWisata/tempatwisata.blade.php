@@ -23,12 +23,12 @@
                   </a>
                 </td>
                 <td>
-                  <h5>
-                    <a href="../../index.html" class="text-dark">
-                      <strong>Kelurahan Temas </strong>
-                      <br />Kota Batu
-                    </a>
-                  </h5>
+                  <h6 class="ms-2 mt-1">
+                    <a href="/" class="text-dark">
+                      <strong class="fs-6" >Kelurahan Temas</strong>
+                        <br/><span class="fs-6">Kota Batu</span> 
+                      </a>
+                  </h6>
                 </td>
               </tr>
             </table>

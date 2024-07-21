@@ -15,10 +15,11 @@ use App\Http\Controllers\DashboardGalleryController;
 use App\Models\Announcement;
 use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\DashboardAgendaController;
+use App\Http\Controllers\IndexController;
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 
 Route::get('kontak', function () {
     return view('Code/kontak/kontak');
@@ -177,3 +178,5 @@ Route::resource('/dashboard/categories/', AdminCategoryController::class);
 Route::get('berita', [NewsController::class, 'index']);
 
 Route::get('berita/{news:slug}', [NewsController::class, 'show']);
+
+Route::get('/', [IndexController::class, 'index']);

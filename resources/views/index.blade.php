@@ -51,19 +51,19 @@
         <div class="container">
           <table>
             <tr>
-                <td>
-                  <a href="/">
-                    <img height="40" data-sticky-top="33" src="../../Assets/Logo_Kota_Batu,_Jawa_Timur_(Seal_of_Batu,_East_Java).svg"/>
-                  </a>
-                </td>
-                <td>
-                    <h5>
-                        <a href="/" class="text-dark">
-                            <strong>Kelurahan Temas </strong>
-                            <br/>Kota Batu 
-                        </a>
-                    </h5>
-                </td>
+              <td>
+                <a href="/">
+                  <img height="40" data-sticky-top="33" src="../../Assets/Logo_Kota_Batu,_Jawa_Timur_(Seal_of_Batu,_East_Java).svg"/>
+                </a>
+              </td>
+              <td>
+                <h6 class="ms-2 mt-1">
+                  <a href="/" class="text-dark">
+                    <strong class="fs-6" >Kelurahan Temas</strong>
+                      <br/><span class="fs-6">Kota Batu</span> 
+                    </a>
+                </h6>
+              </td>
             </tr>
           </table>
   
@@ -179,64 +179,28 @@
           </div>
         </div>
         <div class="row mt-5">
+          @foreach ($news as $post)
           <div class="col-md-3 mb-3">
-            <div class="card">
-              <img src="Assets/jefferson-sees-xkwzWX-i18A-unsplash.jpg" class="card-img-top" alt="..." />
+            <div class="card shadow-sm">
+              <div style="max-height: 200px; overflow: hidden">
+                <img src="{{ asset('storage/' . $post->image) }}" class="card-img-top img-fluid" alt="..." />
+              </div>
               <div class="card-body">
                 <h5 class="card-title">
-                  <a class="link-dark link-offset-2 link-underline-opacity-0 link-opacity-75-hover" href="#">Judul</a>
+                  <a class="link-dark link-offset-2 link-underline-opacity-0 link-opacity-75-hover" href="/berita/{{ $post->slug }}">{{ $post->title }}</a>
                 </h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">{{ $post->excerpt }}</p>
               </div>
               <div class="card-footer">
-                <small class="text-body-secondary">20/06/2024</small>
+                <small class="text-body-secondary">{{ $post->created_at->diffForHumans() }}</small>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
-            <div class="card">
-              <img src="Assets/jefferson-sees-xkwzWX-i18A-unsplash.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a class="link-dark link-offset-2 link-underline-opacity-0 link-opacity-75-hover" href="#">Judul</a>
-                </h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">19/06/2024</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card">
-              <img src="Assets/jefferson-sees-xkwzWX-i18A-unsplash.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a class="link-dark link-offset-2 link-underline-opacity-0 link-opacity-75-hover" href="#">Judul</a>
-                </h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">18/06/2024</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card">
-              <img src="Assets/jefferson-sees-xkwzWX-i18A-unsplash.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a class="link-dark link-offset-2 link-underline-opacity-0 link-opacity-75-hover" href="#">Judul</a>
-                </h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">17/06/2024</small>
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
-        <button type="button" class="btn btn-outline-dark mt-3">Selengkapnya</button>
+        <a href="/berita">
+          <button type="button" class="btn btn-outline-dark mt-3">Selengkapnya</button>
+        </a>
       </div>
     </section>
     <section id="event">
@@ -354,25 +318,20 @@
     </section> -->
     <section id="galeri">
       <div class="container">
-        <div class="row text-center mt-5">
+        <div class="row text-center mt-5 mb-5">
           <div class="col">
             <h2>Galeri Foto dan Video</h2>
           </div>
         </div>
-        <div class="container text-center">
-          <div class="row g-3">
-            <div class="col-6">
-              <div class="p-3">Custom column padding</div>
+        <div class="container">
+          <div class="row mb-4 gx-3 gy-3">
+          @foreach ($galleries as $gallery)
+          <div class="col-lg-3">
+            <div class="card mx-auto" style="height: 200px; width: 300px; overflow: hidden">
+              <img src="{{ asset('storage/' . $gallery->image) }}" class="card-img-top rounded img-fluid" alt="galeri1"/>
             </div>
-            <div class="col-6">
-              <div class="p-3">Custom column padding</div>
-            </div>
-            <div class="col-6">
-              <div class="p-3">Custom column padding</div>
-            </div>
-            <div class="col-6">
-              <div class="p-3">Custom column padding</div>
-            </div>
+          </div>
+          @endforeach
           </div>
         </div>    
       </div>

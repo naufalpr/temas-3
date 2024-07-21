@@ -3,10 +3,11 @@
   <head> 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Temas_Daftar Wisata</title>
+    <title>UMKM | Kelurahan Temas</title>
     <link rel="shortcut icon" href="../../../Assets/Logo_Kota_Batu,_Jawa_Timur_(Seal_of_Batu,_East_Java).svg" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/CSS/hover.css"/>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
@@ -200,12 +201,12 @@
                     </a>
                   </td>
                   <td>
-                      <h5>
-                          <a href="/" class="text-dark">
-                              <strong>Kelurahan Temas </strong>
-                              <br/>Kota Batu 
-                          </a>
-                      </h5>
+                    <h6 class="ms-2 mt-1">
+                      <a href="/" class="text-dark link-underline link-underline-opacity-0">
+                        <strong class="fs-6" >Kelurahan Temas</strong>
+                          <br/><span class="fs-6">Kota Batu</span> 
+                        </a>
+                    </h6>
                   </td>
               </tr>
             </table>
