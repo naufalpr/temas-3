@@ -129,18 +129,6 @@
             </article>
             @endforeach
         </div>
-        <div class="col-lg-3" style="margin-left: auto;">
-            <aside>
-            <h4>Berita Terakhir</h4>
-            <ul class="list-group">
-                <li class="list-group-item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
-                <li class="list-group-item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
-                <li class="list-group-item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
-                <li class="list-group-item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
-                <li class="list-group-item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
-            </ul>
-            </aside>
-        </div>
         <div class="d-flex justify-content-end mt-3">
           {{ $news->links() }}
         </div>
