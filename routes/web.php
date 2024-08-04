@@ -4,6 +4,8 @@ use App\Http\Controllers\AdminCategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Models\News;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DashboardContactController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
@@ -21,9 +23,9 @@ use App\Http\Controllers\IndexController;
 //     return view('index');
 // });
 
-Route::get('kontak', function () {
-    return view('Code/kontak/kontak');
-});
+Route::resource('/kontak', ContactController::class);
+
+Route::resource('/dashboard/contact', DashboardContactController::class)->middleware('auth');
 
 Route::get('visi-misi', function () {
     return view('Code/Profil/visimisi');

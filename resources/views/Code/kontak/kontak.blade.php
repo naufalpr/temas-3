@@ -130,13 +130,19 @@
               <strong>Gagal!</strong>
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <form action="https://api.web3forms.com/submit" id="form" method="POST">
+            @if(session()->has('success'))
+              <div class="alert alert-success" role="alert">
+                {{ session('success') }}
+              </div>
+            @endif
+            <form method="post" action="/kontak" class="mb-5" enctype="multipart/form-data">
+              @csrf
               <div class="mb-3">
-                <input type="hidden" name="access_key" value="24704a43-153c-4af2-a044-a71c79443d7c" />
+                {{-- <input type="hidden" name="access_key" value="24704a43-153c-4af2-a044-a71c79443d7c" />
                 <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-                <input type="checkbox" name="botcheck" id="" style="display: none" />
+                <input type="checkbox" name="botcheck" id="" style="display: none" /> --}}
                 <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="nama" name="nama" required />
+                <input type="text" class="form-control" id="name" name="name" required />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
@@ -144,7 +150,7 @@
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" name="pesan" rows="5" required></textarea>
+                <textarea class="form-control" id="body" name="body" rows="5" required></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-kirim">Kirim Pesan</button>
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
@@ -251,7 +257,7 @@
         btnLoading.classList.toggle("d-none");
         btnKirim.classList.toggle("d-none");
 
-        fetch("https://api.web3forms.com/submit", {
+        fetch("/kontak", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
