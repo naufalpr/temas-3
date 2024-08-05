@@ -11,7 +11,7 @@
   </div>
   @endif
 
-  <div class="table-responsive small col-lg-8">
+  <div class="table-responsive col-lg-8">
     <a href="/dashboard/news/create" class="btn btn-primary mb-3">Buat berita baru</a>
     <table class="table table-striped table-sm">
       <thead>
@@ -22,7 +22,7 @@
         </tr>
       </thead>
       <tbody>
-        @foreach ($news as $news)
+        @foreach ($berita as $news)
         <tr>
           <td>{{ $loop->iteration }}</td>
           <td>{{ $news->title }}</td>
@@ -39,6 +39,9 @@
         @endforeach
       </tbody>
     </table>
+  </div>
+  <div class="d-flex justify-content-end mt-3 col-lg-8">
+    {{ $berita->links() }}
   </div>
   </div>
 

@@ -15,9 +15,16 @@ class DashboardContactController extends Controller
     public function index()
     {
         return view('dashboard.contact.index', [
-            'contact' => Contact::latest()->get()
+            'contacts' => Contact::latest()->paginate(10)
         ]);
     }
+
+    public function show(Contact $contact)
+     {
+         return view('dashboard.contact.show', [
+             'contact' => $contact
+         ]);
+     }
 
     public function destroy(Contact $contact)
     {

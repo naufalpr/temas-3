@@ -96,9 +96,6 @@
                     </ul>
                 </li>
                 <li class="nav-item ms-3">
-                  <a style="margin-top: -2px;", class="nav-link active" href="/layanan">Layanan</a>
-                </li>
-                <li class="nav-item ms-3">
                   <a style="margin-top: -2px;", class="nav-link active" href="/kontak">Kontak</a>
                 </li>
               </ul>
@@ -110,7 +107,7 @@
 
     <nav class="container mt-0" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
       <ul class="breadcrumb py-1" >
-          <li class="breadcrumb-item"><a href="../../index.html"><i class="bi bi-house text-primary"></i></a></li>
+          <li class="breadcrumb-item"><a href="/"><i class="bi bi-house text-primary"></i></a></li>
           <li class="breadcrumb-item">Sarana Prasarana</li>
       </ul>
     </nav>
@@ -122,7 +119,7 @@
       <div class="row mb-4 gx-3 gy-3">
         <div class="col-md-4">
           <div class="card">
-            <img src="Pendidikan.jpg" class="card-img-top" alt="pendidikan" style="max-height: 200px; min-height: 200px;"/>
+            <img src="Assets/Pendidikan.jpg" class="card-img-top" alt="pendidikan" style="max-height: 200px; min-height: 200px;"/>
             <div class="card-body">
               <p class="card-title" style="font-family: 'Poppins', sans-serif; text-align: center;">PENDIDIKAN</p>
               <!-- <a href="#" class="btn btn-primary btn-sm">Detail</a> -->
@@ -131,7 +128,7 @@
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="Tempat Ibadah.jpg" class="card-img-top" alt="tempat ibadah" style="max-height: 200px; min-height: 200px;"/>
+            <img src="Assets/Tempat Ibadah.jpg" class="card-img-top" alt="tempat ibadah" style="max-height: 200px; min-height: 200px;"/>
             <div class="card-body">
               <p class="card-title" style="font-family: 'Poppins', sans-serif; text-align: center;">TEMPAT IBADAH</p>
               <!-- <a href="#" class="btn btn-primary btn-sm">Detail</a> -->
@@ -140,7 +137,7 @@
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="Prasarana Olahraga.jpg" class="card-img-top" alt="olahraga" style="max-height: 200px; min-height: 200px;"/>
+            <img src="Assets/Prasarana Olahraga.jpg" class="card-img-top" alt="olahraga" style="max-height: 200px; min-height: 200px;"/>
             <div class="card-body">
               <p class="card-title" style="font-family: 'Poppins', sans-serif; text-align: center;">PRASARANA OLAHRAGA</p>
               <!-- <a href="#" class="btn btn-primary btn-sm">Detail</a> -->
@@ -149,7 +146,7 @@
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="Transportasi 2.jpg" class="card-img-top" alt="transportasi" style="max-height: 200px; min-height: 200px;"/>
+            <img src="Assets/Transportasi 2.jpg" class="card-img-top" alt="transportasi" style="max-height: 200px; min-height: 200px;"/>
             <div class="card-body">
               <p class="card-title" style="font-family: 'Poppins', sans-serif; text-align: center;">TRANSPORTASI</p>
               <!-- <a href="#" class="btn btn-primary btn-sm">Detail</a> -->
@@ -158,7 +155,7 @@
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="Air Bersih.jpg" class="card-img-top" alt="air bersih" style="max-height: 200px; min-height: 200px;"/>
+            <img src="Assets/Air Bersih.jpg" class="card-img-top" alt="air bersih" style="max-height: 200px; min-height: 200px;"/>
             <div class="card-body">
               <p class="card-title" style="font-family: 'Poppins', sans-serif; text-align: center;">AIR BERSIH</p>
               <!-- <a href="#" class="btn btn-primary btn-sm">Detail</a> -->
@@ -176,7 +173,7 @@
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="Jaringan Drainase.jpg" class="card-img-top" alt="drainase" style="max-height: 200px; min-height: 200px;"/>
+            <img src="Assets/Jaringan Drainase.jpg" class="card-img-top" alt="drainase" style="max-height: 200px; min-height: 200px;"/>
             <div class="card-body">
               <p class="card-title" style="font-family: 'Poppins', sans-serif; text-align: center;">JARINGAN DRAINASE</p>
               <!-- <a href="#" class="btn btn-primary btn-sm">Detail</a> -->
@@ -185,7 +182,7 @@
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="Persampahan 3.jpg" class="card-img-top" alt="persampahan" style="max-height: 200px; min-height: 200px;"/>
+            <img src="Assets/Persampahan 3.jpg" class="card-img-top" alt="persampahan" style="max-height: 200px; min-height: 200px;"/>
             <div class="card-body">
               <p class="card-title" style="font-family: 'Poppins', sans-serif; text-align: center;">PERSAMPAHAN</p>
               <!-- <a href="#" class="btn btn-primary btn-sm">Detail</a> -->
@@ -194,7 +191,7 @@
         </div>
         <div class="col-md-4">
           <div class="card">
-            <img src="Jaringan Listrik.jpg" class="card-img-top" alt="listrik" style="max-height: 200px; min-height: 200px;"/>
+            <img src="Assets/Jaringan Listrik.jpg" class="card-img-top" alt="listrik" style="max-height: 200px; min-height: 200px;"/>
             <div class="card-body">
               <p class="card-title" style="font-family: 'Poppins', sans-serif; text-align: center;">JARINGAN LISTRIK</p>
               <!-- <a href="#" class="btn btn-primary btn-sm">Detail</a> -->
@@ -222,9 +219,8 @@
               <div>
                 <h3>Temas</h3>
                 <p>
-                  Temas merupakan sebuah kelurahan di kota Batu
+                  Temas merupakan sebuah kelurahan di kota Batu.
                   <br>
-                  <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quo!</strong><br>
                 </p>
               </div>
             </div>

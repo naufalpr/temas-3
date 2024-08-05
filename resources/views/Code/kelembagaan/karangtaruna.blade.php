@@ -96,9 +96,6 @@
                     </ul>
                 </li>
                 <li class="nav-item ms-3">
-                  <a style="margin-top: -2px;", class="nav-link active" href="/layanan">Layanan</a>
-                </li>
-                <li class="nav-item ms-3">
                   <a style="margin-top: -2px;", class="nav-link active" href="/kontak">Kontak</a>
                 </li>
               </ul>
@@ -110,7 +107,7 @@
 
     <nav class="container mt-0" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
       <ul class="breadcrumb py-1" >
-          <li class="breadcrumb-item"><a href="../../index.html"><i class="bi bi-house text-primary"></i></a></li>
+          <li class="breadcrumb-item"><a href="/"><i class="bi bi-house text-primary"></i></a></li>
           <li class="breadcrumb-item">Karang Taruna</li>
       </ul>
     </nav>
@@ -150,9 +147,8 @@
               <div>
                 <h3>Temas</h3>
                 <p>
-                  Temas merupakan sebuah kelurahan di kota Batu
+                  Temas merupakan sebuah kelurahan di kota Batu.
                   <br>
-                  <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quo!</strong><br>
                 </p>
               </div>
             </div>

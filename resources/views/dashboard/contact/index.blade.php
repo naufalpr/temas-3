@@ -11,28 +11,27 @@
   </div>
   @endif
 
-  <div class="table-responsive small col-lg-8">
+  <div class="table-responsive col-lg-10">
     <table class="table table-striped table-sm">
       <thead>
         <tr>
-          <th scope="col">No.</th>
+          <th scope="col">#</th>
           <th scope="col">Dikirim</th>
           <th scope="col">Nama</th>
           <th scope="col">Email</th>
-          <th scope="col">Pesan</th>
           <th scope="col">Action</th>
         </tr>
       </thead>
       <tbody>
-        @foreach ($contact as $contact)
+        @foreach ($contacts as $contact)
         <tr>
           <td>{{ $loop->iteration }}</td>
           <td>{{ $contact->created_at->diffForHumans() }}</td>
           <td>{{ $contact->name }}</td>
           <td>{{ $contact->email }}</td>
-          <td>{{ $contact->body }}</td>
           <td>
-            <a href="mailto:{{ $contact->email }}" class="badge bg-info"><i class="bi bi-reply"></i></a>
+            <a href="/dashboard/contact/{{ $contact->id }}" class="badge bg-info"><i class="bi bi-eye"></i></a>
+            <a href="mailto:{{ $contact->email }}" class="badge bg-warning"><i class="bi bi-reply"></i></a>
             <form action="/dashboard/contact/{{ $contact->id }}" method="POST" class="d-inline">
               @method('delete')
               @csrf
@@ -43,6 +42,9 @@
         @endforeach
       </tbody>
     </table>
+  </div>
+  <div class="d-flex justify-content-end mt-3 col-lg-10">
+    {{ $contacts->links() }}
   </div>
   </div>
 

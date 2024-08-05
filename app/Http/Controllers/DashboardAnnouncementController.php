@@ -16,7 +16,7 @@ class DashboardAnnouncementController extends Controller
     public function index()
     {
         return view('dashboard.announcement.index', [
-            'announcement' => Announcement::all()
+            'announcements' => Announcement::latest()->paginate(10)
         ]);
     }
 

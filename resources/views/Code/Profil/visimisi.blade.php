@@ -96,9 +96,6 @@
                     </ul>
                 </li>
                 <li class="nav-item ms-3">
-                  <a style="margin-top: -2px;", class="nav-link active" href="/layanan">Layanan</a>
-                </li>
-                <li class="nav-item ms-3">
                   <a style="margin-top: -2px;", class="nav-link active" href="/kontak">Kontak</a>
                 </li>
               </ul>
@@ -110,7 +107,7 @@
 
     <nav class="container mt-0" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
       <ul class="breadcrumb py-1" >
-          <li class="breadcrumb-item"><a href="../../index.html"><i class="bi bi-house text-primary"></i></a></li>
+          <li class="breadcrumb-item"><a href="/"><i class="bi bi-house text-primary"></i></a></li>
           <li class="breadcrumb-item">Visi & Misi</li>
       </ul>
     </nav>
@@ -118,9 +115,10 @@
     <div class="container mt-5">
       <h1 class="mb-4">Visi dan Misi Kelurahan Temas</h1>
       <h3>Visi : </h3>
-      <p>lorem ipsum</p>
+      <p>Adalah terwujudnya masyarakat informasi yang dinamis sebagai dasar bagi terbentuknya masyarakat madani ( civil society ) yang sehat, cerdas, terampil, kreatif, inovatif, produktif, mandiri, dan berbudaya tinggi.</p>
       <h3>Misi : </h3>
-      <p>lorem ipsum</p>
+      <p>Adalah mengembangkan, memberdayakan, memfasilitasi, dan mendinamisasi pelayanan informasi melalui diseminasi informasi untuk anggota masyarakat.
+      </p>
     </div>
 
     <footer id="footer" class="mt-5">
@@ -132,9 +130,8 @@
               <div>
                 <h3>Temas</h3>
                 <p>
-                  Temas merupakan sebuah kelurahan di kota Batu
+                  Temas merupakan sebuah kelurahan di kota Batu.
                   <br>
-                  <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quo!</strong><br>
                 </p>
               </div>
             </div>

@@ -100,9 +100,6 @@
                   </ul>
               </li>
               <li class="nav-item ms-3">
-                <a style="margin-top: -2px;", class="nav-link active" href="/layanan">Layanan</a>
-              </li>
-              <li class="nav-item ms-3">
                 <a style="margin-top: -2px;", class="nav-link active" href="/kontak">Kontak</a>
               </li>
             </ul>
@@ -129,18 +126,6 @@
           </article>
           @endforeach
       </div>
-      <div class="col-lg-3" style="margin-left: auto;">
-          <aside>
-          <h4>Berita Terakhir</h4>
-          <ul class="list-group">
-              <li class="list-group-item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
-              <li class="list-group-item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
-              <li class="list-group-item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
-              <li class="list-group-item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
-              <li class="list-group-item"><a href="#">Lorem ipsum dolor sit amet.</a></li>
-          </ul>
-          </aside>
-      </div>
       <div class="d-flex justify-content-end mt-3">
         {{ $announcement->links() }}
       </div>
@@ -156,9 +141,8 @@
               <div>
                 <h3>Temas</h3>
                 <p>
-                  Temas merupakan sebuah kelurahan di kota Batu
+                  Temas merupakan sebuah kelurahan di kota Batu.
                   <br>
-                  <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quo!</strong><br>
                 </p>
               </div>
             </div>

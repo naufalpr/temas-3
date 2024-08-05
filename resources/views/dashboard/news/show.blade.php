@@ -14,9 +14,7 @@
           @csrf
           <button class="btn btn-danger" onclick="return confirm('Apakah Anda Yakin?')">Hapus</button>
         </form>
-        <div style="max-height: 350px; overflow:hidden">
-          <img src="{{ asset('storage/' . $news->image) }}" alt="" class="img-fluid me-3 mt-3">
-        </div>
+        <img src="{{ asset('storage/' . $news->image) }}" alt="" class="img-fluid me-3 mt-3">
         <article class="my-3 fs-6">
           <p>{!! $news->body !!}</p>
         </article>

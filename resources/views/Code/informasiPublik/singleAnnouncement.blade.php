@@ -100,9 +100,6 @@
                   </ul>
               </li>
               <li class="nav-item ms-3">
-                <a style="margin-top: -2px;", class="nav-link active" href="/layanan">Layanan</a>
-              </li>
-              <li class="nav-item ms-3">
                 <a style="margin-top: -2px;", class="nav-link active" href="/kontak">Kontak</a>
               </li>
             </ul>
@@ -135,9 +132,8 @@
               <div>
                 <h3>Temas</h3>
                 <p>
-                  Temas merupakan sebuah kelurahan di kota Batu
+                  Temas merupakan sebuah kelurahan di kota Batu.
                   <br>
-                  <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quo!</strong><br>
                 </p>
               </div>
             </div>

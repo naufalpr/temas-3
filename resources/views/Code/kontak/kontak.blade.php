@@ -96,9 +96,6 @@
                     </ul>
                 </li>
                 <li class="nav-item ms-3">
-                  <a style="margin-top: -2px;", class="nav-link active" href="/layanan">Layanan</a>
-                </li>
-                <li class="nav-item ms-3">
                   <a style="margin-top: -2px;", class="nav-link active" href="/kontak">Kontak</a>
                 </li>
               </ul>
@@ -116,7 +113,7 @@
             <p>Hubungi kami untuk informasi lebih lanjut atau pertanyaan seputar Temas.</p>
             <ul class="list-unstyled">
               <li><i class="bi bi-telephone"></i> Telepon: +62 812-3351-548</li>
-              <li><i class="bi bi-envelope"></i> Email: <a href="mailto:temas@example.com">temas@example.com</a></li>
+              <li><i class="bi bi-envelope"></i> Email: <a href="mailto:lurah_temas@gmail.com">lurah_temas@gmail.com</a></li>
               <li><i class="bi bi-geo-alt"></i> Alamat: Jl. Raya Temas No. 123, Kota Batu, Jawa Timur</li>
             </ul>
           </div>
@@ -173,9 +170,8 @@
               <div>
                 <h3>Temas</h3>
                 <p>
-                  Temas merupakan sebuah kelurahan di kota Batu
+                  Temas merupakan sebuah kelurahan di kota Batu.
                   <br>
-                  <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quo!</strong><br>
                 </p>
               </div>
             </div>

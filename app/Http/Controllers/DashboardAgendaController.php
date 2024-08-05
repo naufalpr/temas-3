@@ -16,7 +16,7 @@ class DashboardAgendaController extends Controller
     public function index()
     {
         return view('dashboard.agenda.index', [
-            'agenda' => Agenda::all()
+            'agendas' => Agenda::latest()->paginate(10)
         ]);
     }
 

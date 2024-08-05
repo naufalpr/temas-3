@@ -18,6 +18,8 @@ use App\Models\Announcement;
 use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\DashboardAgendaController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ChangePasswordController;
+use App\Http\Controllers\ChangeUsernameController;
 
 // Route::get('/', function () {
 //     return view('index');
@@ -139,13 +141,17 @@ Route::post('admin', [LoginController::class, 'authenticate']);
 
 Route::post('logout', [LoginController::class, 'logout']);
 
-Route::get('register', [RegisterController::class, 'index'])->middleware('guest');
+// Route::get('register', [RegisterController::class, 'index'])->middleware('guest');
 
-Route::post('register', [RegisterController::class, 'store']);
+// Route::post('register', [RegisterController::class, 'store']);
 
-Route::get('/dashboard', function() {
-    return view('dashboard.index');
-})->middleware('auth');
+// Route::get('/dashboard', function() {
+//     return view('dashboard.index');
+// })->middleware('auth');
+
+Route::get('/dashboard', [ChangePasswordController::class, 'index'])->name('change-password')->middleware('auth');
+
+Route::post('/dashboard', [ChangePasswordController::class, 'updatePassword'])->name('update-password')->middleware('auth');
 
 Route::get('/dashboard/news/checkSlug', [
     DashboardNewsController::class, 'checkSlug'

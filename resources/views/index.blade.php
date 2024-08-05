@@ -122,9 +122,6 @@
                   </ul>
               </li>
               <li class="nav-item ms-3">
-                <a style="margin-top: -2px;", class="nav-link active" href="/layanan">Layanan</a>
-              </li>
-              <li class="nav-item ms-3">
                 <a style="margin-top: -2px;", class="nav-link active" href="/kontak">Kontak</a>
               </li>
             </ul>
@@ -207,95 +204,32 @@
       <div class="container">
         <div class="row text-center mt-5">
           <div class="col">
-            <h2>Agenda Kegiatan</h2>
+            <h2>Pengumuman</h2>
           </div>
         </div>
         <div class="row mt-5">
+          @foreach ($announcement as $post)
           <div class="col-md-3 mb-3">
-            <div class="card">
-              <div class="py-5 text-bg-dark p-3">
-                <h3 class="text-center fw-bolder">25/06/2024</h3>
-                <h6 class="text-center fw-bolder">Nama Event</h5>
+            <div class="card shadow-sm">
+              <div style="max-height: 200px; overflow: hidden">
+                <img src="{{ asset('storage/' . $post->image) }}" class="card-img-top img-fluid" alt="..." />
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <i class="bi bi-calendar-event"></i>
-                  Selasa, 25 Juni 2024</li>
-                <li class="list-group-item">
-                  <i class="bi bi-geo-alt"></i>
-                  Lokasi
-                </li>
-              </ul>
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-outline-dark mt-3">To the event</button>
+                <h5 class="card-title">
+                  <a class="link-dark link-offset-2 link-underline-opacity-0 link-opacity-75-hover" href="/berita/{{ $post->slug }}">{{ $post->title }}</a>
+                </h5>
+                <p class="card-text">{{ $post->excerpt }}</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">{{ $post->created_at->diffForHumans() }}</small>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
-            <div class="card">
-              <div class="py-5">
-                <h3 class="text-center fw-bolder">25/06/2024</h3>
-                <h6 class="text-center fw-bolder">Nama Event</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <i class="bi bi-calendar-event"></i>
-                  Selasa, 25 Juni 2024</li>
-                <li class="list-group-item">
-                  <i class="bi bi-geo-alt"></i>
-                  Lokasi
-                </li>
-              </ul>
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-outline-dark mt-3">To the event</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card">
-              <div class="py-5 text-bg-dark p-3">
-                <h3 class="text-center fw-bolder">25/06/2024</h3>
-                <h6 class="text-center fw-bolder">Nama Event</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <i class="bi bi-calendar-event"></i>
-                  Selasa, 25 Juni 2024</li>
-                <li class="list-group-item">
-                  <i class="bi bi-geo-alt"></i>
-                  Lokasi
-                </li>
-              </ul>
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-outline-dark mt-3">To the event</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card">
-              <div class="py-5">
-                <h3 class="text-center fw-bolder">25/06/2024</h3>
-                <h6 class="text-center fw-bolder">Nama Event</h5>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <i class="bi bi-calendar-event"></i>
-                  Selasa, 25 Juni 2024</li>
-                <li class="list-group-item">
-                  <i class="bi bi-geo-alt"></i>
-                  Lokasi
-                </li>
-              </ul>
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-outline-dark mt-3">To the event</button>
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
+        <a href="/pengumuman">
+          <button type="button" class="btn btn-outline-dark mt-3">Selengkapnya</button>
+        </a>
       </div>
     </section>
     <!-- <section>
@@ -360,10 +294,6 @@
                 <tr>
                   <th>Tahun Pembentukan</th>
                   <td>6 Maret 1993</td>
-                </tr>
-                <tr>
-                  <th>Dasar Hukum</th>
-                  <td>Peraturan Pemerintah Pasal 30 Ayat 29</td>
                 </tr>
                 <tr>
                   <th>Tipologi</th>

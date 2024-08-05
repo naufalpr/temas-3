@@ -265,9 +265,6 @@
                     </ul>
                 </li>
                 <li class="nav-item ms-3">
-                  <a style="margin-top: -2px;", class="nav-link active" href="/layanan">Layanan</a>
-                </li>
-                <li class="nav-item ms-3">
                   <a style="margin-top: -2px;", class="nav-link active" href="/kontak">Kontak</a>
                 </li>
               </ul>
@@ -279,7 +276,7 @@
 
     <nav class="container mt-0" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
       <ul class="breadcrumb py-1" >
-          <li class="breadcrumb-item"><a href="../../index.html"><i class="bi bi-house text-primary"></i></a></li>
+          <li class="breadcrumb-item"><a href="/"><i class="bi bi-house text-primary"></i></a></li>
           <li class="breadcrumb-item">UMKM</li>
       </ul>
     </nav> 
@@ -292,7 +289,7 @@
         <br><br>
 
       <div class="content-row rounded-box">
-        <img src="Usaha Pertanian.png" alt="Pertanian" style="width: 0;"/>
+        <img src="Assets/Usaha Pertanian.png" alt="Pertanian" style="width: 0;"/>
         <div class="text-content">
           <h5>PERTANIAN</h5>
           <p>Pengunaan lahan di Kelurahan Temas sebagian besar sebagai area pertanian dan pemukiman penduduk, 
@@ -306,7 +303,7 @@
       <br><br>
 
       <div class="content-row rounded-box">
-        <img src="peternakan_temas.png" alt="Peternakan" style="width: 0;"/>
+        <img src="Assets/peternakan_temas.png" alt="Peternakan" style="width: 0;"/>
         <div class="text-content">
           <h5>PETERNAKAN</h5>
           <p>Sektor peternakan di Kelurahan Temas juga menjadi salah satu sektor unggulan selain sektor pertanian. 
@@ -321,7 +318,7 @@
       <br><br>
 
       <div class="content-row rounded-box">
-        <img src="Usaha Jasa 2.jpg" alt="Jasa" style="width: 0;"/>
+        <img src="Assets/Usaha Jasa 2.jpg" alt="Jasa" style="width: 0;"/>
         <div class="text-content">
           <h5>JASA</h5>
           <p>Usaha Jasa juga merupakan salah satu penggerak sektor perekonomian penduduk Kelurahan Temas. 
@@ -337,7 +334,7 @@
       <br><br>
 
       <div class="content-row rounded-box">
-        <img src="Perdagangan & Industri.jpg" alt="Perdagangan dan Industri" style="width: 0;"/>
+        <img src="Assets/Perdagangan & Industri.jpg" alt="Perdagangan dan Industri" style="width: 0;"/>
         <div class="text-content">
           <h5>PERDAGANGAN & INDUSTRI</h5>
           <p>Industri kecil di Kelurahan Temas mencakup berbagai UKM dan home industri, termasuk ecoprint yang menghasilkan kain, 
@@ -362,9 +359,8 @@
               <div>
                 <h3>Temas</h3>
                 <p>
-                  Temas merupakan sebuah kelurahan di kota Batu
+                  Temas merupakan sebuah kelurahan di kota Batu.
                   <br>
-                  <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quo!</strong><br>
                 </p>
               </div>
             </div>

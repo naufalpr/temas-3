@@ -7,7 +7,7 @@
       <div class="col-lg-8">
         <h2>{{ $gallery->title }}</h2>
         <p>{{ $gallery->created_at->diffForHumans() }} • {{ $gallery->user->name }}</p>
-        <a href="/dashboard/gallery" class="btn btn-success"><i class="bi bi-arrow-left"></i></i> Kembali ke Pengumuman</a>
+        <a href="/dashboard/gallery" class="btn btn-success"><i class="bi bi-arrow-left"></i></i> Kembali ke Galeri</a>
         <a href="/dashboard/announcement/{{ $gallery->slug }}/edit" class="btn btn-warning"><i class="bi bi-pencil-square"></i>Edit</a>
         <form action="/dashboard/announcement/{{ $gallery->slug }}" method="POST" class="d-inline">
           @method('delete')

@@ -7,38 +7,58 @@
 <div class="col-xl-6 col-lg-9 col-md-12 col-sm-12 col-12">
     <div class="card h-100">
         <div class="card-body">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <h6 class="mb-2 text-primary">Personal Details</h6>
-                </div>
-                <form action="" method="POST">
-                    @csrf
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="username" placeholder="Username">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email">
-                    </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <h6 class="mt-3 mb-2 text-primary">Change Password</h6>
-                    </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label">Current Password</label>
-                        <input type="password" class="form-control" id="formGroupExampleInput" placeholder="Current Password">
-                    </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput2" class="form-label">New Password</label>
-                        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="New Password">
-                    </div>
-                </form>
-            <div class="d-grid d-md-flex justify-content-md-end">
-                <button class="btn btn-primary" type="button">Update</button>
+            <h3>{{ __('Change Password') }}</h3>
+
+        @csrf
+
+        @if (session('status'))
+            <div class="alert alert-success">
+                {{ session('status') }}
             </div>
+        @elseif (session('error'))
+            <div class="alert alert-danger">
+                {{ session('error') }}
+            </div>
+        @endif
+
+        <form method="POST" action="{{ route('update-password') }}">
+            @csrf
+            
+            <div class="form-group mb-3">
+                <label for="old_password">{{ __('Old Password') }}</label>
+                <input id="old_password" type="password" class="form-control @error('old_password') is-invalid @enderror" name="old_password" required>
+
+                @error('old_password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="new_password">{{ __('New Password') }}</label>
+                <input id="new_password" type="password" class="form-control @error('new_password') is-invalid @enderror" name="new_password" required>
+
+                @error('new_password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="confirm_new_password">{{ __('Confirm New Password') }}</label>
+                <input id="confirm_new_password" type="password" class="form-control @error('confirm_new_password') is-invalid @enderror" name="new_password_confirmation" required>
+
+                @error('confirm_new_password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+
+            <button type="submit" class="btn btn-primary">{{ __('Submit') }}</button>
+        </form>
         </div>
     </div>
 </div>

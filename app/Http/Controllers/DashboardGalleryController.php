@@ -16,7 +16,7 @@ class DashboardGalleryController extends Controller
     public function index()
     {
         return view('dashboard.gallery.index', [
-            'gallery' => Gallery::all(),
+            'galleries' => Gallery::latest()->paginate(10),
         ]);
     }
 

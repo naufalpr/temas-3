@@ -100,9 +100,6 @@
                   </ul>
               </li>
               <li class="nav-item ms-3">
-                <a style="margin-top: -2px;", class="nav-link active" href="/layanan">Layanan</a>
-              </li>
-              <li class="nav-item ms-3">
                 <a style="margin-top: -2px;", class="nav-link active" href="/kontak">Kontak</a>
               </li>
             </ul>
@@ -117,7 +114,7 @@
           <h2 class="mb-4">Berita</h2>
           <h2>{{ $news->title }}</h2>
           <p>{{ $news->created_at->diffForHumans() }} • {{ $news->user->name }}</p>
-          <img style="max-height: 500px; max-width:800px; overflow:hidden" src="{{ asset('storage/' . $news->image) }}" alt="" class="image-fluid me-3">
+          <img src="{{ asset('storage/' . $news->image) }}" alt="" class="img-fluid me-3">
           <article class="my-3 fs-6">
             <p>{!! $news->body !!}</p>
           </article>
@@ -135,9 +132,8 @@
               <div>
                 <h3>Temas</h3>
                 <p>
-                  Temas merupakan sebuah kelurahan di kota Batu
+                  Temas merupakan sebuah kelurahan di kota Batu.
                   <br>
-                  <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quo!</strong><br>
                 </p>
               </div>
             </div>
