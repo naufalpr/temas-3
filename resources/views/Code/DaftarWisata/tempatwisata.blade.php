@@ -163,11 +163,14 @@
       <div class="text-bg-dark">
         <div class="container pt-4">
           <div class="row">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 mb-4">
               <div>
                 <h3>Temas</h3>
                 <p>
-                  Temas merupakan sebuah kelurahan di kota Batu
+                  Temas adalah sebuah kelurahan di Kecamatan Batu, Kota Batu, Provinsi Jawa Timur, Indonesia.
+                  <br>
+                  <strong>Jalan Wukir No 709
+                  Kode Pos 65315</strong><br>
                 </p>
               </div>
             </div>
